@@ -5,15 +5,20 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 header h1 {
     text-align: center;
     margin-block: 20px 30px;
+    color: #e53170;
 }
 
 main {
     width: 70%;
     margin: 0 auto;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 main p {
@@ -27,29 +32,50 @@ main p {
 }
 
 .card-container {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .card-container .row {
-    border: 3px dashed black;
+    /* border: 3px dashed black; */
     margin: 30px 0;
 }
 
 .card-container .row .card {
-    width: calc(100% / 3 - 60px);
+    width: calc(100% / 3 - 60px / 3);
     height: 100px;
     float: left;
 }
 
-.card-container .row .card:first-child {
-    background-color: green;
+.card-container .row .card {
+    background-color: #0f0e17;
 }
 
 .card-container .row .card:nth-child(2) {
-    background-color: purple;
     margin: 0 30px;
 }
 
-.card-container .row .card:last-child {
-    background-color: orange;
+.card img, .member-details {
+    height: 100%;
+    float: left;
+}
+
+.card .member-details {
+    float: left;
+    font-size: 12px;
+    padding: 15px;
+    line-height: 25px;
+}
+
+.card .member-details h2, .card .member-details h3 {
+    color: white;
+}
+
+.card .member-details h2 {
+    text-transform: uppercase;
+}
+
+.card .member-details .email {
+    text-transform: lowercase;
+    color: #55C9E2;
+    font-weight: bold;
 }
