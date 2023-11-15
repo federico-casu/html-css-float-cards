@@ -6,13 +6,14 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 header h1 {
     text-align: center;
-    margin-block: 20px 30px;
+    margin-block: 30px 40px;
     color: #e53170;
+    font-weight: 700;
 }
 
 main {
@@ -23,6 +24,7 @@ main {
 
 main p {
     text-align: center;
+    font-weight: 300;
 }
 
 .clearfix::after {
@@ -48,6 +50,8 @@ main p {
 
 .card-container .row .card {
     background-color: #0f0e17;
+    /* sha */
+    box-shadow: 2px 2px 5px #8e8d8f;
 }
 
 .card-container .row .card:nth-child(2) {
@@ -72,10 +76,16 @@ main p {
 
 .card .member-details h2 {
     text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card .member-details h3 {
+    font-weight: 500;
 }
 
 .card .member-details .email {
     text-transform: lowercase;
     color: #55C9E2;
-    font-weight: bold;
 }
+
+/* EXERCISE COMPLETED */
