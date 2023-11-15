@@ -4,3 +4,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header h1 {
+    text-align: center;
+    margin-block: 20px 30px;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+main p {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card-container {
+    border: 1px solid blue;
+}
+
+.col {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    border: 1px dashed black;
+    float: left;
+}
+
+/* .card-container .card:first-child {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+} */
